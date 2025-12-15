@@ -6,7 +6,7 @@ function Header() {
             <nav>
                 <h1>Deyvid Matheus</h1>
                 <div className="links">
-                    <a href="#" target="_blank">Home</a>
+                    <a href="#">Home</a>
                     <a href="#" target="_blank">Sobre</a>
                 </div>
             </nav>

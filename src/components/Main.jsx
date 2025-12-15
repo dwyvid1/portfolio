@@ -1,10 +1,7 @@
 import "../styles/Main.css";
 import profilePhoto from "../img/deyvid.jpeg";
 
-import devfinancesImg from "../img/projects/devfinances.png";
-import roteiroImg from "../img/projects/controledeviagem.png";
-import genfImg from "../img/projects/genf2.png";
-
+// Importação dos ícones das tecnologias
 import {
   SiHtml5,
   SiCss3,
@@ -12,6 +9,11 @@ import {
   SiNodedotjs,
   SiReact,
 } from "react-icons/si";
+
+// Importação das imagens dos projetos
+import devfinancesImg from "../img/projects/devfinances.png";
+import roteiroImg from "../img/projects/controledeviagem.png";
+import genfImg from "../img/projects/genf2.png";
 
 const projects = [
   {
@@ -54,7 +56,7 @@ function Main() {
 
       {/* SOBRE MIM */}
       <section className="about-section">
-        <h2>Sobre mim</h2>
+        <h2>Um resumo sobre mim</h2>
         <p>
             Olá! Me chamo Deyvid Matheus, sou estudante de Sistemas de Informação e apaixonado por tecnologia e inovação digital.
             No meu tempo livre, gosto de estudar Desenvolvimento Web, Programação e explorar novas ideias que conectem
@@ -99,7 +101,7 @@ function Main() {
 
       {/* PROJETOS */}
       <section className="projects-section">
-        <h2>Projetos</h2>
+        <h2>Projetos desenvolvidos</h2>
 
         <div className="projects-grid">
           {projects.map((project, index) => (
