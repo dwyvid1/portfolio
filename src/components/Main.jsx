@@ -12,14 +12,12 @@ function Main() {
                 />
                 <h2 className="profile-name">Deyvid Matheus</h2>
                 <p className="profile-description">
-                    Tecnologia • Espiritualidade • Games
+                    Helpdesk • Web Development • Tech Enthusiast
                 </p>
                 <div className="social-links">
                     <a href="#">Github</a>
                     <a href="#">LinkedIn</a>
-                    <a href="#">Instagram</a>
                     <a href="#">Discord</a>
-                    <a href="#">Gmail</a>
                 </div>
             </div>
 
