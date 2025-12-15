@@ -15,9 +15,9 @@ function Main() {
                     Helpdesk • Web Development • Tech Enthusiast
                 </p>
                 <div className="social-links">
-                    <a href="#">Github</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Discord</a>
+                    <a href="https://github.com/dwyvid1" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/deyvid-matheus-101a69197/" target="_blank">Linkedin</a>
+                    <a href="#" target="_blank">Discord</a>
                 </div>
             </div>
 

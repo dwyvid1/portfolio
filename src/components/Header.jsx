@@ -6,9 +6,8 @@ function Header() {
             <nav>
                 <h1>Deyvid Matheus</h1>
                 <div className="links">
-                    <a href="#home">Home</a>
-                    <a href="#blog">Contato</a>
-                    <a href="#cv">CV</a>
+                    <a href="#" target="_blank">Home</a>
+                    <a href="#" target="_blank">Sobre</a>
                 </div>
             </nav>
         </header>
