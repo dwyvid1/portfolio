@@ -8,7 +8,7 @@
     text-align: center;
     padding: 100px 20px;
     background-color: #f4f4f4;
-    gap: 4rem;
+    gap: 1rem;
 }
 
 /* Profile Container */
@@ -47,7 +47,7 @@
     font-style: italic;
 }
 
-/* Links Sociais */
+/* Links das redes sociais */
 .social-links {
     display: flex;
     gap: 15px;
@@ -70,7 +70,7 @@
     color: white;
 }
 
-/* Seção Sobre */
+/* Seção sobre mim */
 .about-section {
     max-width: 800px;
     padding: 0 20px;
@@ -85,4 +85,69 @@
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: #222;
+}
+
+/* Tecnologias */
+
+.tech-section {
+  text-align: center;
+}
+
+.tech-section h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 24px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.tech-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tech-item:hover {
+  transform: translateY(-6px);
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-item {
+    gap: 8px;
+  }
+
+  .tech-icon {
+    font-size: 36px;
+  }
+
+  .tech-item span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+  }
 }
