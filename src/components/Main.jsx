@@ -1,14 +1,35 @@
 import "../styles/Main.css";
 import profilePhoto from "../img/deyvid.jpeg";
 
+import devfinancesImg from "../img/projects/devfinances.png";
+import roteiroImg from "../img/projects/controledeviagem.png";
+import genfImg from "../img/projects/genf2.png";
+
 import {
   SiHtml5,
   SiCss3,
   SiJavascript,
   SiNodedotjs,
   SiReact,
-  SiGit
 } from "react-icons/si";
+
+const projects = [
+  {
+    name: "Devfinances",
+    github: "https://github.com/dwyvid1/Discover-Marathon",
+    image: devfinancesImg,
+  },
+  {
+    name: "Roteiro de Viagem",
+    github: "https://github.com/dwyvid1/NLWJourney",
+    image: roteiroImg,
+  },
+  {
+    name: "Genf 2.0",
+    github: "https://github.com/dwyvid1/genf2.0",
+    image: genfImg,
+  },
+];
 
 function Main() {
   return (
@@ -31,7 +52,7 @@ function Main() {
         </div>
       </div>
 
-        {/* SOBRE MIM */}
+      {/* SOBRE MIM */}
       <section className="about-section">
         <h2>Sobre mim</h2>
         <p>
@@ -44,7 +65,7 @@ function Main() {
         </p>
       </section>
 
-        {/* TECNOLOGIAS */}
+      {/* TECNOLOGIAS */}
       <section className="tech-section">
         <h2>Tecnologias que domino</h2>
 
@@ -73,6 +94,29 @@ function Main() {
             <SiReact size={42} />
             <span>ReactJS</span>
           </div>
+        </div>
+      </section>
+
+      {/* PROJETOS */}
+      <section className="projects-section">
+        <h2>Projetos</h2>
+
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <a
+              key={index}
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="project-card"
+            >
+              <img src={project.image} alt={project.name} />
+
+              <div className="project-overlay">
+                <h3>{project.name}</h3>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
